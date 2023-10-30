@@ -1,9 +1,9 @@
 import sys
 import pytest
 
-from project_name import create_app
-from project_name.ext.commands import populate_db
-from project_name.ext.database import db
+from tracking_token_social import create_app
+from tracking_token_social.ext.commands import populate_db
+from tracking_token_social.ext.database import db
 
 
 @pytest.fixture(scope="session")

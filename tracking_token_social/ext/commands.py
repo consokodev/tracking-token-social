@@ -1,8 +1,8 @@
 import click
 
-from project_name.ext.auth import create_user
-from project_name.ext.database import db
-from project_name.models import Product
+from tracking_token_social.ext.auth import create_user
+from tracking_token_social.ext.database import db
+from tracking_token_social.models import Product
 
 
 def create_db():

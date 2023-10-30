@@ -2,8 +2,8 @@ FROM python:3.7-alpine
 COPY . /app
 WORKDIR /app
 RUN pip install .
-RUN project_name create-db
-RUN project_name populate-db
-RUN project_name add-user -u admin -p admin
+RUN tracking_token_social create-db
+RUN tracking_token_social populate-db
+RUN tracking_token_social add-user -u admin -p admin
 EXPOSE 5000
-CMD ["project_name", "run"]
+CMD ["tracking_token_social", "run"]
